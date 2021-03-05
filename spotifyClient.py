@@ -15,6 +15,8 @@ class SpotifyClient:
         inputURL = input("Copy and paste URL: ")
         code = inputURL[inputURL.index("code=") + 5: inputURL.index("&state=")]
 
+        url = "https://developer.spotify.com/dashboard/applications"
+        webbrowser.open(url)
         client_secret = input("Client Secret: ")
         authorization_string = f"{client_id}:{client_secret}"
         authorization_bytes = authorization_string.encode('ascii')
