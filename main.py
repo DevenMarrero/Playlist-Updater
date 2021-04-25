@@ -1,7 +1,7 @@
 from spotifyClient import SpotifyClient
 
 def run():
-    client_id = "c49576a273214dc9b2a5b1227d34e4bd"
+    client_id = input("Client ID: ")
     # Create spotify client
     spotify_client = SpotifyClient(client_id)
     # Get playlists
